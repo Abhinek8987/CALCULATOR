@@ -4,10 +4,10 @@ A simple and responsive calculator web application built using HTML, CSS, and Ja
 
 # 🚀 Features
 
-✅ Basic Arithmetic Operations: Add, subtract, multiply, and divide numbers.
-✅ Responsive Design: Fully responsive layout suitable for all devices.
-✅ Clear Functionality: Easily clear the input and start fresh.
-✅ Keyboard Support: Allows input using the keyboard as well.
+✅ **Basic Arithmetic Operations** – Add, subtract, multiply, and divide numbers  
+✅ **Responsive Design** – Fully responsive layout suitable for all devices  
+✅ **Clear Functionality** – Easily clear the input and start fresh  
+✅ **Keyboard Support** – Allows input using the keyboard as well  
 
 # 📸 Screenshots
 
@@ -15,9 +15,9 @@ A simple and responsive calculator web application built using HTML, CSS, and Ja
 
 
 # 💻 Technologies Used
-HTM - Structure of the webpage
-CSS - Styling and layout
-JavaScript - Functionality and logic
+- **HTML** – Structure of the webpage  
+- **CSS** – Styling and layout  
+- **JavaScript** – Functionality and logic  
 
 
 
