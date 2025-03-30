@@ -1,72 +1,127 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.container{
-    width: 100%;
-    height: 100vh;
-    /* background-color: coral; */
-    /* background-color: cornflowerblue; */
-    background: linear-gradient(35deg, red, blue);
-    /* background-color:#e3f9ff ; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.calculator{
-    /* background: cadetblue; */
-    background: linear-gradient(90deg, orange , yellow);
-    /* background: #3a4452; */
-    padding: 20px;
-    border-radius:10px ;
-}
-.calculator form input{
-    margin: 13px;
-    width: 80px;
-    height: 60px;
-    border: 0;
-    outline: 0;
-    border-radius: 10px;
-    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
-    background: linear-gradient(90deg, orange , yellow);
-    font-size: 30px;
-    color:black;
-    cursor: pointer;
-    
-    
-
-}
-.calculator form input:hover{
-    opacity: 0.7;
-}
-
-form .visible{
-    /*background-color: brown; */
-    background: linear-gradient(#e66465, #9198e5);
-    display:flex;
-    justify-content: flex-end;
-    margin:0px 0;
-}
-form .visible input{
-    text-align: right;
-    flex: 1;
-    font-size:35px;
-    box-shadow: none;
-}
-form input.equal{
-    background-color: sandybrown;
-    /* width: 170px; */
-    /* color:yellowgreen; */
-}
-form input.Arthemetic{
-     background-color: sandybrown;
-
-}
-form input.Arthemetic1{
-    color: red;
-    /* color:aliceblue; */
-    
-}
-form input.Arthemetic1:hover{
-    opacity: 0.7;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(35deg, red, blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+        
+        .calculator {
+            background: linear-gradient(90deg, orange, yellow);
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .calculator form {
+            width: 100%;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        
+        .calculator form input {
+            width: calc(25% - 10px);
+            height: 60px;
+            margin: 5px;
+            border: 0;
+            outline: 0;
+            border-radius: 10px;
+            box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1), 
+                        5px 5px 10px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(90deg, orange, yellow);
+            font-size: 24px;
+            color: black;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        
+        .calculator form input:hover {
+            opacity: 0.7;
+        }
+        
+        form .visible {
+            background: linear-gradient(#e66465, #9198e5);
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        form .visible input {
+            text-align: right;
+            width: 100%;
+            font-size: 35px;
+            box-shadow: none;
+            padding: 10px 15px;
+            background: transparent;
+            color: white;
+            height: 70px;
+        }
+        
+        /* Keep the original placeholder color */
+        form .visible input::placeholder {
+            color: inherit;
+            opacity: 0.7;
+        }
+        
+        form input.equal {
+            background-color: sandybrown;
+        }
+        
+        form input.Arthemetic {
+            background-color: sandybrown;
+        }
+        
+        form input.Arthemetic1 {
+            color: red;
+        }
+        
+        /* Responsive design for mobile */
+        @media screen and (max-width: 480px) {
+            .calculator {
+                padding: 15px;
+            }
+            
+            .calculator form input {
+                height: 50px;
+                font-size: 20px;
+                margin: 4px;
+                width: calc(25% - 8px);
+            }
+            
+            form .visible input {
+                font-size: 30px;
+                height: 60px;
+            }
+        }
+        
+        /* For very small screens */
+        @media screen and (max-width: 320px) {
+            .calculator form input {
+                height: 45px;
+                font-size: 18px;
+                margin: 3px;
+                width: calc(25% - 6px);
+            }
+            
+            form .visible input {
+                font-size: 25px;
+                height: 55px;
+            }
+        }

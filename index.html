@@ -4,58 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-       <div class="calculator">
-        <form>
-            <div class="visible">
-                <input type="text" name="visible" placeholder="Abhinek Pandey">
-                
-            </div>
-            <div>
-                <input type="button" value="AC" onclick="visible.value = ''" class="Arthemetic1">
-                <input type="button" value="CL" onclick="visible.value =  visible.value.toString().slice(0,-1)" class="Arthemetic1">
-                <input type="button" value="." onclick="visible.value += '.'" class="Arthemetic">
-                <input type="button" value="/" onclick="visible.value += '/'" class="Arthemetic"> 
-
-            </div>
-            <div>
-                <input type="button" value="7" onclick="visible.value += '7'">
-                <input type="button" value="8"onclick="visible.value += '8'">
-                <input type="button" value="9"onclick="visible.value += '9'">
-                <input type="button" value="*" onclick="visible.value += '*'" class="Arthemetic"> 
-
-            </div>
-            <div>
-                <input type="button" value="4" onclick="visible.value += '4'">
-                <input type="button" value="5" onclick="visible.value += '5'">
-                <input type="button" value="6" onclick="visible.value += '6'">
-                <input type="button" value="-" onclick="visible.value += '-'" class="Arthemetic"> 
-
-            </div>
-            <div>
-                <input type="button" value="1" onclick="visible.value += '1'">
-                <input type="button" value="2"onclick="visible.value += '2'">
-                <input type="button" value="3" onclick="visible.value += '3'">
-                <input type="button" value="+" onclick="visible.value += '+'" class="Arthemetic"> 
-
-            </div>
-            <div>
-                <input type="button" value="000" onclick="visible.value += '000'">
-                <input type="button" value="00" onclick="visible.value += '00'">
-                <input type="button" value="0" onclick="visible.value += '0'">
-                <input  type="button" value="=" class="equal" onclick="visible.value = eval(visible.value)">
-            </div>
-
-
-
-
-
-        </form>
-
-       </div> 
+        <div class="calculator">
+            <form>
+                <div class="visible">
+                    <input type="text" name="visible" placeholder="Abhinek Pandey">
+                </div>
+                <div class="row">
+                    <input type="button" value="AC" onclick="visible.value = ''" class="Arthemetic1">
+                    <input type="button" value="CL" onclick="visible.value = visible.value.toString().slice(0,-1)" class="Arthemetic1">
+                    <input type="button" value="." onclick="visible.value += '.'" class="Arthemetic">
+                    <input type="button" value="/" onclick="visible.value += '/'" class="Arthemetic">
+                </div>
+                <div class="row">
+                    <input type="button" value="7" onclick="visible.value += '7'">
+                    <input type="button" value="8" onclick="visible.value += '8'">
+                    <input type="button" value="9" onclick="visible.value += '9'">
+                    <input type="button" value="*" onclick="visible.value += '*'" class="Arthemetic">
+                </div>
+                <div class="row">
+                    <input type="button" value="4" onclick="visible.value += '4'">
+                    <input type="button" value="5" onclick="visible.value += '5'">
+                    <input type="button" value="6" onclick="visible.value += '6'">
+                    <input type="button" value="-" onclick="visible.value += '-'" class="Arthemetic">
+                </div>
+                <div class="row">
+                    <input type="button" value="1" onclick="visible.value += '1'">
+                    <input type="button" value="2" onclick="visible.value += '2'">
+                    <input type="button" value="3" onclick="visible.value += '3'">
+                    <input type="button" value="+" onclick="visible.value += '+'" class="Arthemetic">
+                </div>
+                <div class="row">
+                    <input type="button" value="000" onclick="visible.value += '000'">
+                    <input type="button" value="00" onclick="visible.value += '00'">
+                    <input type="button" value="0" onclick="visible.value += '0'">
+                    <input type="button" value="=" class="equal" onclick="try { visible.value = eval(visible.value); } catch(error) { visible.value = 'Error'; }">
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
